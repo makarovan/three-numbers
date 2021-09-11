@@ -26,7 +26,9 @@ public class ThreeNumbers {
         int hundreds = (int) Math.floor(number/100);
         int tens = (int) Math.floor((number - hundreds*100)/10);
         int units = number - hundreds*100 - tens*10;
-        System.out.println("В числе "+number+" "+hundreds+" сотен, "+tens+" десятков, "+units+" единиц");
+        int sum = hundreds + tens +units;
+        System.out.println("В числе "+number+" "+hundreds+" сотен, "+tens+" десятков, "+units+" единиц. Сумма цифр числа равна "+sum);
+       
         }
     }
 
